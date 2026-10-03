@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Koala Baby 🌙❤️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stars"></div>
+<div class="moon"></div>
+<div class="petals"></div>
+
+<main id="app">
+
+  <!-- PAGE 1 -->
+  <section class="page active" id="welcome">
+    <div class="glass-card welcome-card">
+      <div class="eyebrow">A little something from Mishi</div>
+      <div class="flower">✦</div>
+      <h1>For my<br><span>Koala Baby</span></h1>
+      <p class="soft">Tushi, I made a tiny world just for you...</p>
+      <p class="tiny">Come in slowly. There is a little bit of my heart inside. 🌙</p>
+      <button class="main-btn" onclick="goTo('question')">Tap here <span>♡</span></button>
+    </div>
+  </section>
+
+  <!-- PAGE 2 -->
+  <section class="page" id="question">
+    <div class="glass-card question-card">
+      <div class="eyebrow">Before we continue...</div>
+      <div class="heart-pulse">♥</div>
+      <h2>Do you love<br><span>your Mishi?</span></h2>
+      <p class="soft">Be very careful with your answer, Koala Baby. 🥺</p>
+      <div class="answer-buttons">
+        <button class="yes-btn" onclick="yesLove()">YES, OF COURSE ❤️</button>
+        <button class="no-btn" id="noBtn" onclick="noLove()">NO 🙃</button>
+      </div>
+      <p id="noMessage" class="no-message"></p>
+    </div>
+  </section>
+
+  <!-- PAGE 3 -->
+  <section class="page" id="memories">
+    <div class="content-card">
+      <div class="eyebrow">Our little universe</div>
+      <h2>Little pieces<br><span>of us...</span> 🌙</h2>
+      <p class="intro">Some moments become memories. Some memories become home.</p>
+
+      <div class="memory-grid">
+        <article class="memory">
+          <div class="photo-placeholder">
+            <img src="photos/memory1.jpg" alt="Our memory 1" onerror="this.style.display='none';this.parentElement.classList.add('empty')">
+            <span>PHOTO 01</span>
+          </div>
+          <p>One of my favourite moments with you.</p>
+        </article>
+        <article class="memory">
+          <div class="photo-placeholder">
+            <img src="photos/memory2.jpg" alt="Our memory 2" onerror="this.style.display='none';this.parentElement.classList.add('empty')">
+            <span>PHOTO 02</span>
+          </div>
+          <p>That smile I'll never get tired of.</p>
+        </article>
+        <article class="memory">
+          <div class="photo-placeholder">
+            <img src="photos/memory3.jpg" alt="Our memory 3" onerror="this.style.display='none';this.parentElement.classList.add('empty')">
+            <span>PHOTO 03</span>
+          </div>
+          <p>A moment I wish I could live again.</p>
+        </article>
+        <article class="memory">
+          <div class="photo-placeholder">
+            <img src="photos/memory4.jpg" alt="Our memory 4" onerror="this.style.display='none';this.parentElement.classList.add('empty')">
+            <span>PHOTO 04</span>
+          </div>
+          <p>Us, being our silly little selves.</p>
+        </article>
+        <article class="memory">
+          <div class="photo-placeholder">
+            <img src="photos/memory5.jpg" alt="Our memory 5" onerror="this.style.display='none';this.parentElement.classList.add('empty')">
+            <span>PHOTO 05</span>
+          </div>
+          <p>A memory I want to keep forever.</p>
+        </article>
+        <article class="memory">
+          <div class="photo-placeholder">
+            <img src="photos/memory6.jpg" alt="Our memory 6" onerror="this.style.display='none';this.parentElement.classList.add('empty')">
+            <span>PHOTO 06</span>
+          </div>
+          <p>And one more little piece of us. ❤️</p>
+        </article>
+      </div>
+
+      <button class="main-btn" onclick="goTo('letter')">There is something I want to tell you 💌</button>
+    </div>
+  </section>
+
+  <!-- PAGE 4 -->
+  <section class="page" id="letter">
+    <div class="letter-card">
+      <div class="letter-top">♡ A letter from Mishi ♡</div>
+      <h2>To my Koala Baby,</h2>
+
+      <div class="letter">
+        <p>Tushi,</p>
+        <p>I don't think I will ever find enough words to explain what you mean to me. Somehow, somewhere along the way, you became such a beautiful part of my life that I can't imagine my little world without you in it.</p>
+        <p>I love the way we have our own tiny universe — our jokes, our conversations, our silly moments, the smiles, the little fights, and all those ordinary moments that somehow become special just because they have <em>us</em> in them.</p>
+        <p>You are not just someone I love. You are someone I want to keep choosing — through the happy days, the messy days, the boring days, and all the beautiful days that are still waiting for us.</p>
+        <p>Thank you for being my person, my comfort, my happiness, and my favourite Koala Baby. Thank you for giving me memories that I can look back on and smile about.</p>
+        <p>I don't know what the future will look like, but I know one thing: I want more of <strong>us</strong>. More laughs. More memories. More random conversations. More photographs. More days where I get to call you mine.</p>
+        <p>And if I ever forget to say it enough, please remember this little letter:</p>
+        <p class="emphasis">I choose you.<br>I adore you.<br>And I love you more than these little words can ever explain.</p>
+        <p>Happy Boyfriend's Day, my Koala Baby.</p>
+        <p class="signature">Forever yours,<br><span>Mishi ❤️</span></p>
+      </div>
+
+      <button class="main-btn" onclick="goTo('final')">One last thing... 🌙</button>
+    </div>
+  </section>
+
+  <!-- PAGE 5 -->
+  <section class="page final-page" id="final">
+    <div class="final-card">
+      <div class="orbit">✦　♡　✦</div>
+      <p class="eyebrow">And finally...</p>
+      <h1>Tushi,</h1>
+      <p class="final-text">If you ever wonder how much you mean to me,<br>come back to this little place.</p>
+      <div class="big-love">I LOVE<br><span>YOU</span></div>
+      <p class="lot">A LOT. ❤️</p>
+      <div class="divider">✧　🌙　✧</div>
+      <p class="final-note">Your Mishi will always have a soft corner<br>of her heart reserved for her Koala Baby.</p>
+      <p class="closing">Happy Boyfriend's Day, my love. 🌙🥀</p>
+      <button class="restart-btn" onclick="goTo('welcome')">Read it again ♡</button>
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
